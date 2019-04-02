@@ -1,0 +1,71 @@
+class Carro:
+	def __init__(self):
+	    self.passageiro = 0
+	    self.km = 0
+	    self.combustivel = 0
+	    self.lim_passageiros = 2
+	    self.lim_combustivel = 10
+	
+	def entrar(self):
+	    if self.pas < self.lim_passageiros
+                self.passageitos += 1
+ 	    else:
+		print("Erro: limite de pessoas atingido")
+
+	def sair(self):
+            if self.passageiro > 0:
+               self.passageiro -= 1
+	    else:
+		print("Erro: nao ha ninguem no carro")
+
+	def abastecer(self, qtd):
+	    self.combustivel += qtd
+	    if(self.combustivel > self.lim_combustivel):
+	       self.combustivel = self.lim_combustivel
+	
+	def dirigir(self, diatancia):
+	    if self.passageiros == 0:
+		print("Erro: nao ha ninguem no carro")
+		return
+	    combusti_necessaria = distancia / 10
+	    if(self.combustivel >= combisti_necessaria):
+	       self.km += distancia
+	       self.combustivel -= combust_necessaria  
+	    else:
+ 		print("Erro: gasolina insuficiente")
+
+	def __str__(self):
+	    return "passageiro: " + str(self.passageiros) + ", Gasolina:" + \
+	    str(self.combustivel) + ", km" + str(self.km)
+
+carro = Carro ():
+line = ""
+print ("Digite show, in, out, fuel_qtd, drive_dista ou end")
+while(ui != "end")
+    line = input()  
+    ui = line.split(" ")  
+
+    if ui[0] =="end":
+	break
+    elif ui[0] == "show"
+	print(carro)
+    elif ui[0] == "in":
+	carro.entrar()
+    elif ui[0] == "out":
+	carro.tirar()
+    elif ui[0] == "combustivel":
+	carro.abastecer(int(ui[1]))
+    elif ui[0] == "dirigir
+	carro.drive(int(ui[1]))
+
+    else:
+	print("Erro:comando invalido")
+
+
+
+
+
+
+
+	    
+	
